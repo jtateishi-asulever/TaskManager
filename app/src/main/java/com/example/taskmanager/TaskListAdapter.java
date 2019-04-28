@@ -57,6 +57,7 @@ public class TaskListAdapter extends ArrayAdapter<TaskData> {
         return view;
     }
 
+    /** 削除ダイアログの生成 */
     private void showConfirmDeleteDialog(TaskData task) {
 
         // OKボタン押下時のリスナ

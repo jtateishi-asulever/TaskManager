@@ -50,6 +50,11 @@ public class MainActivity extends AppCompatActivity {
         // ListViewにAdapterをセット
         mAdapter = new TaskListAdapter(this, R.layout.task_list_item, mTasks);
         mTaskListView.setAdapter(mAdapter);
+
+        //リスト項目が選択された時のイベントを追加
+        mTaskListView.setOnItemClickListener((parent, view, position, id) -> {
+            presentDetailActivity(mTasks.get(position));
+        });
     }
 
 
@@ -72,10 +77,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /** 詳細画面へ遷移 */
-    private void presentDetailActivity() {
+    private void presentDetailActivity(TaskData task) {
         Intent intent = new Intent(this, DetailActivity.class);
-        intent.putExtra("title", mTaskTitleEdit.getText().toString());
-        intent.putExtra("detail", mTaskDetailEdit.getText().toString());
+        intent.putExtra("title", task.getTitle());
+        intent.putExtra("detail", task.getDetail());
         startActivity(intent);
     }
 
