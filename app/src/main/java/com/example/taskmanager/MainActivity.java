@@ -69,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
         // TEST
         // TEST
         // TEST
-        // TEST
 
         if (title.isEmpty()) {
             showMessageDialog("タスク名を入力してください");
