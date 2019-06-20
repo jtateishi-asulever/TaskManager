@@ -66,6 +66,11 @@ public class MainActivity extends AppCompatActivity {
         String title = mTaskTitleEdit.getText().toString();
         String detail = mTaskDetailEdit.getText().toString();
 
+        // TEST
+        // TEST
+        // TEST
+        // TEST
+
         if (title.isEmpty()) {
             showMessageDialog("タスク名を入力してください");
             return;
