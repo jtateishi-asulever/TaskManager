@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
     /** タスク追加 */
     private void addTaskToList() {
+        //mTaskTitleEditからTextを持ってくる
         String title = mTaskTitleEdit.getText().toString();
         String detail = mTaskDetailEdit.getText().toString();
 
