@@ -28,6 +28,7 @@ public class DetailActivity extends AppCompatActivity {
     /** Intentで受け取った値をViewに反映 */
     private void setIntentData() {
         Intent intent = getIntent();
+        //String = 文字
         String title = intent.getStringExtra("title");
         String detail = intent.getStringExtra("detail");
         mTaskTitle.setText(title);

@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
+    //private = MainActivityのみで使用可能
     private EditText mTaskTitleEdit;
     private EditText mTaskDetailEdit;
     private Button mAddTaskButton;
@@ -99,5 +99,7 @@ public class MainActivity extends AppCompatActivity {
                 .setPositiveButton("OK", listener)
                 .setNegativeButton("Cancel", null)
                 .show();
+
+        //終了
     }
 }
